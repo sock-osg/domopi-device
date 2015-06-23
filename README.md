@@ -13,3 +13,7 @@
 
 * [Tutorial: Ultra Low Cost 2.4 GHz Wireless Transceiver with the FRDM Board](http://mcuoneclipse.com/2013/07/20/tutorial-ultra-low-cost-2-4-ghz-wireless-transceiver-with-the-frdm-board/)
 
+## Video References
+
+* [10 - Microcontroladores PIC - Comunicação PIC+nRF24L01+](https://www.youtube.com/watch?v=Pj-enHa2wvU)
+
