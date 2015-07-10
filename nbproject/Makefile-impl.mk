@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=domopi-device.X
+PROJECTNAME=domopi-device
 
 # Active Configuration
 DEFAULTCONF=default

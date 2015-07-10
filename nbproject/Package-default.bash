@@ -10,9 +10,9 @@ CND_CONF=default
 CND_DISTDIR=dist
 TMPDIR=build/${CND_CONF}/${IMAGE_TYPE}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/domopi-device.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-OUTPUT_BASENAME=domopi-device.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-PACKAGE_TOP_DIR=domopi-device.x/
+OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/domopi-device.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+OUTPUT_BASENAME=domopi-device.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+PACKAGE_TOP_DIR=domopi-device/
 
 # Functions
 function checkReturnCode
@@ -57,15 +57,15 @@ mkdir -p ${TMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory ${TMPDIR}/domopi-device.x/bin
+makeDirectory ${TMPDIR}/domopi-device/bin
 copyFileToTmpDir "${OUTPUT_PATH}" "${TMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/package/domopi-device.x.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/package/domopi-device.tar
 cd ${TMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/domopi-device.x.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/domopi-device.tar *
 checkReturnCode
 
 # Cleanup

@@ -41,7 +41,14 @@ extern "C" {
  */
 #define     RX_MODE     1;
 
-
+/*
+ * TX mode
+ * To enter this mode, the nRF24L01 must have:
+ *      PWR_UP bit set high
+ *      PRIM_RX bit set low
+ *      a payload in the TX FIFO
+ *      a high pulse on the CE for more than 10μs.
+ */
 #define     TX_MODE     0;
 
 #ifdef	__cplusplus
